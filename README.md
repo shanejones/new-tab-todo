@@ -4,24 +4,19 @@ Version 0.1.0
 
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+A simple todo list app that lives on Chromes New Tab screen.
+
+* You can add new items,
+* Drag and drop between the 3 columns,
+* Re-order items,
+* Double click to edit items,
+* Clear completed items with the delete button in the bottom right.
 
 
 ## Installation
 
 You can install this extension from the Chrome web store.
 
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Currently I, Shane Jones, am the sole contributor. 
 
 ## License
 
