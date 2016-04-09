@@ -1,11 +1,13 @@
 {
-  "name": "Todo Tab",
+  "name": "New Tab Todo",
   "description": "Creates a quick todo list on your new tab",
   "version": "0.1.0",
+  "author": "Shane Jones",
   "incognito": "split",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
+  "default_locale": "en",
   "manifest_version": 2,
   "permissions": [
     "storage"
