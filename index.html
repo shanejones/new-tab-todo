@@ -1,0 +1,111 @@
+<html>
+<head>
+    <title>New Tab Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="outer">
+
+
+
+        <header>
+            <div class="date">
+                <p id="date"></p>
+            </div>
+
+            <div class="add-task">
+                <a href="#">Add a Task</a>
+            </div>
+
+            <div class="time">
+                <p id="time"></p>
+            </div>
+        </header>
+
+
+
+        <main class="list-container">
+
+            <div class="list-inner">
+
+                <div class="list">
+                    <h1>What do you have to do today?</h1>
+                    <a href="#" class="add-today"></a>
+
+                    <ul class="items today-list">
+
+                        <li>Click 'Add a Task' to create new tasks</li>
+
+                        <li>Drag this task to the completed column</li>
+
+                        <li>Double click items to edit them. Then press enter to finish editing.</li>
+
+                        <li>Follow Shane Jones on Twitter <a href="http://twitter.com/shanejones">Follow @shanejones</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="list">
+                    <h1>What do you have to do another day?</h1>
+
+                    <ul class="items another-day-list">
+
+                        <li>Show your support by donating to this plugins future development. <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z4XKQSGB6PCGL">Donate now</a>.</li>
+
+                    </ul>
+                </div>
+                <div class="list">
+                    <h1>Your completed items</h1>
+
+                    <ul class="items completed">
+
+                        <li>Install this Chrome Extension.</li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </main>
+
+
+
+        <footer>
+            <p>Version: 0.1.0 <a href="https://github.com/shanejones/new-tab-todo/issues">Bugs / Feature Requests</a><br>Credit: <a href="http://www.shanejones.co.uk" target="_blank">Shane Jones</a>. <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z4XKQSGB6PCGL">Donate</a> to fund future development.  Go and follow him on Twitter
+                <a href="https://twitter.com/shanejones">Follow @shanejones</a>.</p>
+            <p class="delete">
+                <a href="#" class="clear">Clear Completed Items</a>
+            </p>
+            <p class="delete-sure">
+                Are you sure <a href="#" class="yes">Yes</a> <a href="#" class="no">No</a>
+            </p>
+        </footer>
+
+
+
+
+
+        <section class="add-task">
+
+            <h1>Add New Task</h1>
+
+            <input type="text" id="task" placeholder="Task details"/>
+
+            <div class="buttons">
+                <button id="today">Add for Today</button>
+                <button id="another-day">Add for Another Day</button>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery.ui.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+
+</body>
+</html>
+
