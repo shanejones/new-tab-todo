@@ -91,9 +91,10 @@ function save_edit(elem){
  * Show the add task area when the button is clicked
  *
  * @since 0.1.0
+ * @updated 0.1.1
  */
 
-$('.add-task a').click(function(){
+$('.add-task a').click(function add_task(){
     $('header, main').addClass('inactive');
     $('section.add-task').fadeIn(250);
     $('#task').focus();
@@ -102,12 +103,27 @@ $('.add-task a').click(function(){
 
 
 /**
+ * Hide the add task area when the X is clicked
+ *
+ * @since  0.1.1
+ */
+
+$('section.add-task a.hide_task').click(function hide_add_task(){
+    $('header, main').removeClass('inactive');
+    $('section.add-task').fadeOut(250);
+    $('#task').val('');
+})
+
+
+
+/**
  * Add the created task to the correct list based on the buttons id, refresh the lists and store the items
  *
  * @since 0.1.0
+ * @updated 0.1.1
  */
 
-$('.buttons button').click(function(){
+$('.buttons button').click(function save_task(){
     var list = $(this).attr('id');
     var text = $('#task').val();
 
@@ -128,9 +144,10 @@ $('.buttons button').click(function(){
  * Show the are you sure prompt when the delete button is clicked
  *
  * @since 0.1.0
+ * @updated 0.1.1
  */
 
-$('.delete .clear').click(function(){
+$('.delete .clear').click(function clear_completed(){
     $('.delete').hide();
     $('.delete-sure').show();
 })
@@ -141,9 +158,10 @@ $('.delete .clear').click(function(){
  * Revert back to the delete button when no is pressed on the are you sure prompt
  *
  * @since 0.1.0
+ * @updated 0.1.1
  */
 
-$('.delete-sure .no').click(function(){
+$('.delete-sure .no').click(function clear_completed_confirm(){
     $('.delete-sure').hide();
     $('.delete').show();
 })
@@ -154,9 +172,10 @@ $('.delete-sure .no').click(function(){
  * Run the delete_completed() function and reset the delete area
  *
  * @since 0.1.0
+ * @updated 0.1.1
  */
 
-$('.delete-sure .yes').click(function(){
+$('.delete-sure .yes').click(function clear_completed_deny(){
     $('.delete-sure').hide();
     $('.delete').show();
 

@@ -9,6 +9,15 @@ section.add-task {
   bottom: 0;
   background: rgba(255,255,255,0.5);
   padding-top: 70px;
+  
+  .hide_task {
+    position: relative;
+    right: 10px;
+    font-size: 30px;
+    float: right;
+    text-decoration: none;
+    color: #F44336;
+  }
 
   h1 {
     padding: 10px 0 50px;

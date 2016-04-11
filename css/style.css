@@ -498,6 +498,13 @@ section.add-task {
   bottom: 0;
   background: rgba(255, 255, 255, 0.5);
   padding-top: 70px; }
+  section.add-task .hide_task {
+    position: relative;
+    right: 10px;
+    font-size: 30px;
+    float: right;
+    text-decoration: none;
+    color: #F44336; }
   section.add-task h1 {
     padding: 10px 0 50px;
     text-align: center; }
