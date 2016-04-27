@@ -1,5 +1,5 @@
 # New Tab Todo - for Google Chrome
-Version 0.1.0
+Version 0.1.2
 
 
 ## Synopsis

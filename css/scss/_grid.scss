@@ -2,6 +2,12 @@ body {
   padding: 87px 0 74px 0;
 }
 
+.outer {
+  min-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+
 
 header {
   position: fixed;
@@ -76,7 +82,7 @@ main {
     }
 
     .list {
-      width: 400px;
+      width: 25%;
       box-sizing: border-box;
       padding: 20px;
       min-height: 150px;

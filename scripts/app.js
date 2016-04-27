@@ -301,13 +301,29 @@ function get_date(){
  * Store the 'today' list into chrome storage
  *
  * @since 0.1.0
+ * @updated 0.1.2
  */
 
 function store_today(){
 
-    var today = $('ul.today-list').html();
+    var data = $('ul.today-list').html();
 
-    chrome.storage.sync.set({'list_today': today});
+    chrome.storage.sync.set({'list_today': data});
+
+}
+
+
+/**
+ * Store the 'tomorrow' list into chrome storage
+ *
+ * @since 0.1.2
+ */
+
+function store_tomorrow(){
+
+    var data = $('ul.tomorrow-list').html();
+
+    chrome.storage.sync.set({'list_tomorrow': data});
 
 }
 
@@ -317,13 +333,14 @@ function store_today(){
  * Store the 'another day' list into chrome storage
  *
  * @since 0.1.0
+ * @updated 0.1.2
  */
 
 function store_another_day(){
 
-    var another_day = $('ul.another-day-list').html();
+    var data = $('ul.another-day-list').html();
 
-    chrome.storage.sync.set({'list_another_day': another_day});
+    chrome.storage.sync.set({'list_another_day': data});
 
 }
 
@@ -333,13 +350,14 @@ function store_another_day(){
  * Store the 'completed' list into chrome storage
  *
  * @since 0.1.0
+ * @updated 0.1.2
  */
 
 function store_completed(){
 
-    var completed = $('ul.completed').html();
+    var data = $('ul.completed').html();
 
-    chrome.storage.sync.set({'list_completed': completed});
+    chrome.storage.sync.set({'list_completed': data});
 
 }
 
@@ -349,10 +367,12 @@ function store_completed(){
  * Run all of the storage functions
  *
  * @since 0.1.0
+ * @updated 0.1.2
  */
 
 function store_items(){
     store_today();
+    store_tomorrow();
     store_another_day();
     store_completed();
 }
@@ -363,11 +383,16 @@ function store_items(){
  * Get the lists from storage and output in the right lists
  *
  * @since 0.1.0
+ * @updated 0.1.2
  */
 
 function get_lists(){
     chrome.storage.sync.get('list_today', function(items) {
         $('ul.today-list').html(items.list_today);
+    });
+
+    chrome.storage.sync.get('list_tomorrow', function(items) {
+        $('ul.tomorrow-list').html(items.list_tomorrow);
     });
 
     chrome.storage.sync.get('list_another_day', function(items) {
@@ -385,10 +410,14 @@ function get_lists(){
  * Delete all lists. This will essentially reset the app.
  *
  * @since 0.1.0
+ * @updated 0.1.2
  */
 
 function delete_lists(){
     chrome.storage.sync.remove('list_today', function(items) {
+    });
+
+    chrome.storage.sync.remove('list_tomorrow', function(items) {
     });
 
     chrome.storage.sync.remove('list_another_day', function(items) {
