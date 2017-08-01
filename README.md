@@ -1,5 +1,5 @@
 # New Tab Todo - for Google Chrome
-Version 0.1.2
+Version 0.1.3
 
 
 ## Synopsis
@@ -16,6 +16,11 @@ A simple todo list app that lives on Chromes New Tab screen.
 ## Installation
 
 You can install this extension from the Chrome web store.
+
+
+###Changes
+Version 0.1.3
+* Updated donate link
 
 
 ## License
