@@ -15,12 +15,13 @@ A simple todo list app that lives on Chromes New Tab screen.
 
 ## Installation
 
-You can install this extension from the Chrome web store.
+You can install this extension from the [Chrome web store](https://chrome.google.com/webstore/detail/new-tab-todo/bdekiejhbfceihmbjpncbbedaffinobm).
 
 
 ###Changes
 Version 0.1.3
 * Updated donate link
+* Added Chrome web store link to readme
 
 
 ## License
