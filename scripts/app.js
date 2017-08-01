@@ -442,3 +442,18 @@ function delete_complete(){
 
     chrome.storage.sync.set({'list_completed': ''});
 }
+
+
+/**
+ * Remove items from the completed column
+ *
+ * @since 0.1.0
+ */
+
+function delete_complete(){
+    chrome.storage.sync.remove('list_completed', function(items) {
+        $('ul.completed').html('')
+    });
+
+    chrome.storage.sync.set({'list_completed': ''});
+}
